@@ -1,6 +1,7 @@
 import Image from 'next/image';
+import { Product } from 'apps/next-monorepo/services/products/api';
+
 import styles from './products.module.scss';
-import { Product } from '../api';
 
 export const Products = ({ products }: { products: Product[] }) => {
   return (

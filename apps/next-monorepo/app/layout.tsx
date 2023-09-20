@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import './global.scss';
-import Providers from '../components/providers/react-query/client';
+import Providers from 'apps/next-monorepo/components/providers/react-query/client';
 
 export const metadata = {
   title: 'Welcome to next-monorepo',

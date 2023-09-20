@@ -1,5 +1,5 @@
-import { Products } from '../../services/products/components/products';
-import { fetchProducts } from '../../services/products/api';
+import { fetchProducts } from 'apps/next-monorepo/services/products/api';
+import { Products } from 'apps/next-monorepo/services/products/components/products';
 
 export default async function Index() {
   const products = await fetchProducts();
