@@ -11,7 +11,17 @@ body {
   font-family: inherit;
   line-height: inherit;
   margin: 0;
+  padding: 1rem 2rem;
+  color: white;
+  background-image: linear-gradient(140deg, #352c11 0%, #000000 100%);
+  min-height: 100svh;
 }
+
+ul {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
 h1,
 h2,
 p,
@@ -26,14 +36,13 @@ pre {
   border-style: solid;
   border-color: currentColor;
 }
-h1,
-h2 {
-  font-size: inherit;
+h1 {
+  font-size: 3rem;
   font-weight: inherit;
 }
+
 a {
   color: inherit;
-  text-decoration: inherit;
 }
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,

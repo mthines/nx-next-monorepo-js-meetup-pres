@@ -1,4 +1,7 @@
-import './global.css';
+import Link from 'next/link';
+
+import './global.scss';
+import Providers from '../components/providers/react-query/client';
 
 export const metadata = {
   title: 'Welcome to next-monorepo',
@@ -12,7 +15,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <nav>
+          <ul>
+            <li>
+              <Link href="/server">{'Server Component - No hydration'}</Link>
+            </li>
+            <li>
+              <Link href="/server-client-hydration">
+                {'Server Component - With client hydration'}
+              </Link>
+            </li>
+            <li>
+              <Link href="/client">{'Client only'}</Link>
+            </li>
+            <li>
+              <Link href="/client-using-react-query">
+                {'Client only - using react-query'}
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <main>
+          <Providers>{children}</Providers>
+        </main>
+      </body>
     </html>
   );
 }
