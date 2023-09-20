@@ -19,9 +19,23 @@
         "@next/next/no-html-link-for-pages": [
           "error",
           "apps/next-monorepo/pages"
+        ],
+        "@nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": ["@apps/next-monorepo"],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
         ]
       }
     },
+
     {
       "files": ["*.ts", "*.tsx"],
       "rules": {}

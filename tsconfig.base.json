@@ -15,11 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@next-monorepo/services-products": [
-        "libs/services/products/src/index.ts"
+      "@apps/*": ["apps/*"],
+      "@next-monorepo/features-products": [
+        "libs/features/products/src/index.ts"
       ],
-      "@next-monorepo/services-products/server": [
-        "libs/services/products/src/server.ts"
+      "@next-monorepo/features-products/server": [
+        "libs/features/products/src/server.ts"
       ]
     }
   },

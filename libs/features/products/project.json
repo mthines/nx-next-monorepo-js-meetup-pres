@@ -1,7 +1,7 @@
 {
-  "name": "services-products",
+  "name": "features-products",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/services/products/src",
+  "sourceRoot": "libs/features/products/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -9,7 +9,7 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/services/products/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["libs/features/products/**/*.{ts,tsx,js,jsx}"]
       }
     }
   }

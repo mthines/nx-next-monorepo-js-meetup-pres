@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { Product } from 'apps/next-monorepo/services/products/api';
+
+import { Product } from '@apps/next-monorepo/features/products/api';
 
 import styles from './products.module.scss';
 

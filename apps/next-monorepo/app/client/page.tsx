@@ -1,11 +1,12 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+
 import {
   Product,
   fetchProducts,
-} from 'apps/next-monorepo/services/products/api';
-import { Products } from 'apps/next-monorepo/services/products/components/products';
-import { useEffect, useState } from 'react';
+} from '@apps/next-monorepo/features/products/api';
+import { Products } from '@apps/next-monorepo/features/products/components/products';
 
 export default function Index() {
   const [products, setProducts] = useState<Product[]>([]);
