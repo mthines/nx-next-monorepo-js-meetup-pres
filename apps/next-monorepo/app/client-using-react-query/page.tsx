@@ -1,8 +1,8 @@
 'use client';
 
+import { Products } from '@next-monorepo/services-products';
+import { fetchProducts } from '@next-monorepo/services-products/server';
 import { useQuery } from '@tanstack/react-query';
-import { fetchProducts } from 'apps/next-monorepo/services/products/api';
-import { Products } from 'apps/next-monorepo/services/products/components/products';
 
 export default function Index() {
   const { data: products } = useQuery(['products'], fetchProducts);

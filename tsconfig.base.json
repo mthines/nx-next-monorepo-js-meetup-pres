@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@next-monorepo/services-products": [
+        "libs/services/products/src/index.ts"
+      ],
+      "@next-monorepo/services-products/server": [
+        "libs/services/products/src/server.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

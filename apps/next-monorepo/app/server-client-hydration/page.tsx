@@ -1,9 +1,10 @@
+import { Products } from '@next-monorepo/services-products';
+import { prefetchProducts } from '@next-monorepo/services-products/server';
+
 import {
   getQueryClient,
   HydrateProvider,
 } from 'apps/next-monorepo/components/providers/react-query/hydration';
-import { prefetchProducts } from 'apps/next-monorepo/services/products/api';
-import { Products } from 'apps/next-monorepo/services/products/components/products';
 
 export default async function Index() {
   const queryClient = getQueryClient();

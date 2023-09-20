@@ -1,0 +1,11 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 380px));
+  gap: 2rem;
+}
+
+.product {
+  img {
+    border-radius: 2rem;
+  }
+}
