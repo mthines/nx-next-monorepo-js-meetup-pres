@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Product } from '../api';
 
+import { Product } from '../api';
 import styles from './products.module.scss';
 
 export const Products = ({ products }: { products: Product[] }) => {

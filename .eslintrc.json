@@ -27,6 +27,13 @@
       "rules": {}
     },
     {
+      "files": ["*.spec.ts", "*.spec.tsx"],
+      "extends": ["plugin:@nx/typescript"],
+      "rules": {
+        "playwright/expect-expect": "off"
+      }
+    },
+    {
       "files": ["*.js", "*.jsx"],
       "extends": ["plugin:@nx/javascript"],
       "rules": {}
