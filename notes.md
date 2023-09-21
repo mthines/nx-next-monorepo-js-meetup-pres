@@ -17,14 +17,6 @@ npx nx run [app-name]:[executor-name] [options]
 npx nx run next-monorepo:serve
 ```
 
-```sh
-# Example
-npx nx run [app-name]:[executor-name] [options]
-
-# Generate icons in UI Library
-npx nx run ui:generate
-```
-
 ## Affected
 
 ```sh
